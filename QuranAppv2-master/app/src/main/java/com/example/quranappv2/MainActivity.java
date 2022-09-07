@@ -52,13 +52,13 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                if(item.getItemId()==R.id.nav_gallery)
+                if(item.getItemId()==R.id.parah)
                 {
                     Intent intent = new Intent(MainActivity.this, AllParahs.class);
                     startActivity(intent);
                 }
 
-                else if(item.getItemId()==R.id.nav_slideshow)
+                else if(item.getItemId()==R.id.surah)
                 {
                     Intent intent = new Intent(MainActivity.this, AllSurahs.class);
                     startActivity(intent);

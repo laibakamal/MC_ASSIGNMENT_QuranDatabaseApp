@@ -1,7 +1,6 @@
 package com.example.quranappv2;
 
 import android.content.Context;
-import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,7 +27,7 @@ public class SurahCustomListConfig extends ArrayAdapter<Surah> {
         TextView name = convertView.findViewById(R.id.textView3);
         TextView nazool = convertView.findViewById(R.id.textView2);
         id.setText(s.getId());
-        name.setText(s.getNameE());
+        name.setText(s.getNameU());
         nazool.setText(s.getNazool());
         return convertView;
     }

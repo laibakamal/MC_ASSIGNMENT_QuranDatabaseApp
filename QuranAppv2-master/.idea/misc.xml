@@ -3,16 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/EEEEEEEEEEE/SEMESTER 6/Android Studio Projects/MC_ASSIGNMENT_QuranDatabaseApp/MC_ASSIGNMENT_QuranDatabaseApp/QuranAppv2-master/app/src/main/res/layout/activity_all_parahs.xml" value="0.19791666666666666" />
         <entry key="..\:/EEEEEEEEEEE/SEMESTER 6/Android Studio Projects/MC_ASSIGNMENT_QuranDatabaseApp/MC_ASSIGNMENT_QuranDatabaseApp/QuranAppv2-master/app/src/main/res/layout/activity_all_surahs.xml" value="0.209375" />
         <entry key="..\:/EEEEEEEEEEE/SEMESTER 6/Android Studio Projects/MC_ASSIGNMENT_QuranDatabaseApp/MC_ASSIGNMENT_QuranDatabaseApp/QuranAppv2-master/app/src/main/res/layout/activity_main.xml" value="0.19791666666666666" />
         <entry key="..\:/EEEEEEEEEEE/SEMESTER 6/Android Studio Projects/MC_ASSIGNMENT_QuranDatabaseApp/MC_ASSIGNMENT_QuranDatabaseApp/QuranAppv2-master/app/src/main/res/layout/activity_nav_drawer.xml" value="0.19791666666666666" />
         <entry key="..\:/EEEEEEEEEEE/SEMESTER 6/Android Studio Projects/MC_ASSIGNMENT_QuranDatabaseApp/MC_ASSIGNMENT_QuranDatabaseApp/QuranAppv2-master/app/src/main/res/layout/activity_para_context.xml" value="0.25" />
         <entry key="..\:/EEEEEEEEEEE/SEMESTER 6/Android Studio Projects/MC_ASSIGNMENT_QuranDatabaseApp/MC_ASSIGNMENT_QuranDatabaseApp/QuranAppv2-master/app/src/main/res/layout/activity_surah_context.xml" value="0.2" />
+        <entry key="..\:/EEEEEEEEEEE/SEMESTER 6/Android Studio Projects/MC_ASSIGNMENT_QuranDatabaseApp/MC_ASSIGNMENT_QuranDatabaseApp/QuranAppv2-master/app/src/main/res/layout/content_nav_drawer.xml" value="0.19791666666666666" />
+        <entry key="..\:/EEEEEEEEEEE/SEMESTER 6/Android Studio Projects/MC_ASSIGNMENT_QuranDatabaseApp/MC_ASSIGNMENT_QuranDatabaseApp/QuranAppv2-master/app/src/main/res/layout/fragment_home.xml" value="0.19791666666666666" />
+        <entry key="..\:/EEEEEEEEEEE/SEMESTER 6/Android Studio Projects/MC_ASSIGNMENT_QuranDatabaseApp/MC_ASSIGNMENT_QuranDatabaseApp/QuranAppv2-master/app/src/main/res/layout/fragment_slideshow.xml" value="0.19791666666666666" />
+        <entry key="..\:/EEEEEEEEEEE/SEMESTER 6/Android Studio Projects/MC_ASSIGNMENT_QuranDatabaseApp/MC_ASSIGNMENT_QuranDatabaseApp/QuranAppv2-master/app/src/main/res/layout/nav_activity_main.xml" value="0.19791666666666666" />
+        <entry key="..\:/EEEEEEEEEEE/SEMESTER 6/Android Studio Projects/MC_ASSIGNMENT_QuranDatabaseApp/MC_ASSIGNMENT_QuranDatabaseApp/QuranAppv2-master/app/src/main/res/layout/nav_all_parahs.xml" value="0.19791666666666666" />
         <entry key="..\:/EEEEEEEEEEE/SEMESTER 6/Android Studio Projects/MC_ASSIGNMENT_QuranDatabaseApp/MC_ASSIGNMENT_QuranDatabaseApp/QuranAppv2-master/app/src/main/res/layout/nav_parah_context.xml" value="0.209375" />
         <entry key="..\:/EEEEEEEEEEE/SEMESTER 6/Android Studio Projects/MC_ASSIGNMENT_QuranDatabaseApp/MC_ASSIGNMENT_QuranDatabaseApp/QuranAppv2-master/app/src/main/res/layout/nav_surah_context.xml" value="0.19791666666666666" />
         <entry key="..\:/EEEEEEEEEEE/SEMESTER 6/Android Studio Projects/MC_ASSIGNMENT_QuranDatabaseApp/MC_ASSIGNMENT_QuranDatabaseApp/QuranAppv2-master/app/src/main/res/layout/nav_translated_ayat.xml" value="0.209375" />
-        <entry key="..\:/EEEEEEEEEEE/SEMESTER 6/Android Studio Projects/MC_ASSIGNMENT_QuranDatabaseApp/MC_ASSIGNMENT_QuranDatabaseApp/QuranAppv2-master/app/src/main/res/layout/surah_item.xml" value="0.209375" />
+        <entry key="..\:/EEEEEEEEEEE/SEMESTER 6/Android Studio Projects/MC_ASSIGNMENT_QuranDatabaseApp/MC_ASSIGNMENT_QuranDatabaseApp/QuranAppv2-master/app/src/main/res/layout/surah_item.xml" value="0.25" />
         <entry key="..\:/EEEEEEEEEEE/SEMESTER 6/Android Studio Projects/MC_ASSIGNMENT_QuranDatabaseApp/MC_ASSIGNMENT_QuranDatabaseApp/QuranAppv2-master/app/src/main/res/layout/translated_ayat.xml" value="0.209375" />
+        <entry key="..\:/EEEEEEEEEEE/SEMESTER 6/Android Studio Projects/MC_ASSIGNMENT_QuranDatabaseApp/MC_ASSIGNMENT_QuranDatabaseApp/QuranAppv2-master/app/src/main/res/menu/activity_nav_drawer_drawer.xml" value="0.5" />
         <entry key="..\:/QuranAppv2-master/app/src/main/res/layout/activity_all_parahs.xml" value="0.18" />
         <entry key="..\:/QuranAppv2-master/app/src/main/res/layout/activity_all_surahs.xml" value="0.17889492753623187" />
         <entry key="..\:/QuranAppv2-master/app/src/main/res/layout/activity_nav_drawer.xml" value="0.67" />

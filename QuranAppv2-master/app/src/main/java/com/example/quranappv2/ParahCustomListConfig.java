@@ -24,8 +24,8 @@ public class ParahCustomListConfig extends ArrayAdapter<Parah> {
         Parah s =  getItem(position);
         convertView = LayoutInflater.from(getContext()).inflate(R.layout.surah_item,parent,false);
         TextView id = convertView.findViewById(R.id.textView);
-        TextView nameU = convertView.findViewById(R.id.textView3);
-        TextView nameE = convertView.findViewById(R.id.textView2);
+        TextView nameU = convertView.findViewById(R.id.textView2);
+        TextView nameE = convertView.findViewById(R.id.textView3);
         id.setText(s.getId());
         nameU.setText(s.getNameE());
         nameE.setText(s.getNameU());

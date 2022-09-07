@@ -5,12 +5,32 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/parah"
             android:icon="@drawable/ic_menu_gallery"
             android:title="Parah" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:id="@+id/surah"
+            android:icon="@drawable/ic_menu_gallery"
             android:title="Surah" />
+
+        <item
+            android:id="@+id/fateh_muhammad"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Fateh Muhammad" />
+
+        <item
+            android:id="@+id/mehmood_ul_hassan"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Mehmood Ul Hassan" />
+
+        <item
+            android:id="@+id/mohsin_khan"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Dr Mohsin Khan" />
+        <item
+            android:id="@+id/taqi_usmani"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Mufti Taqi Usmani" />
+
     </group>
 </menu>
