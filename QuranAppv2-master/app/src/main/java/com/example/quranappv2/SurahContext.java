@@ -4,6 +4,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.graphics.Typeface;
@@ -20,6 +22,14 @@ public class SurahContext extends AppCompatActivity {
     Store store;
     DataBaseHelper db;
     ListView l;
+
+
+
+    RecyclerView recyclerView;
+    RecyclerView.Adapter adapter;
+    RecyclerView.LayoutManager layoutManager;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,8 +53,29 @@ public class SurahContext extends AppCompatActivity {
                 }
             }
         }
-        AyatCustomListConfig list = new AyatCustomListConfig(this, 0, thisSurahAyat);
-        l.setAdapter(list);
+
+
+
+
+        recyclerView = findViewById(R.id.recyclerView);
+
+
+        recyclerView.setHasFixedSize(true);
+
+        //LinearLayoutManager GridLayoutManager
+        // layoutManager = new LinearLayoutManager(MainActivity.this);
+        layoutManager = new LinearLayoutManager(SurahContext.this,
+                LinearLayoutManager.VERTICAL,
+                false);
+        recyclerView.setLayoutManager(layoutManager);
+
+        adapter = new AyatRecyclerViewAdapter(thisSurahAyat) ;
+        recyclerView.setAdapter(adapter);
+
+
+
+//        AyatCustomListConfig list = new AyatCustomListConfig(this, 0, thisSurahAyat);
+//        l.setAdapter(list);
 
 
 

@@ -41,7 +41,7 @@ public class ParaContext extends AppCompatActivity {
                 }
             }
         }
-        AyatCustomListConfig list = new AyatCustomListConfig(this, 0, thisParaAyat);
+        AyatRecyclerViewAdapter list = new AyatRecyclerViewAdapter(this, 0, thisParaAyat);
         l.setAdapter(list);
 
 
