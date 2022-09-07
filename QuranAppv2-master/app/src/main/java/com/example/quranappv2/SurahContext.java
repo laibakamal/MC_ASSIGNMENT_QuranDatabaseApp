@@ -8,14 +8,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.ListView;
 
 import com.google.android.material.navigation.NavigationView;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class SurahContext extends AppCompatActivity {
@@ -35,7 +33,7 @@ public class SurahContext extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nav_surah_context);
         store = new Store();
-        l = findViewById(R.id.listview);
+        recyclerView = findViewById(R.id.recyclerView);
         db = new DataBaseHelper(SurahContext.this);
         ArrayList<Ayat> ayat = db.getAyat();
         ArrayList<Ayat> thisSurahAyat = new ArrayList<>();
@@ -62,8 +60,6 @@ public class SurahContext extends AppCompatActivity {
 
         recyclerView.setHasFixedSize(true);
 
-        //LinearLayoutManager GridLayoutManager
-        // layoutManager = new LinearLayoutManager(MainActivity.this);
         layoutManager = new LinearLayoutManager(SurahContext.this,
                 LinearLayoutManager.VERTICAL,
                 false);
@@ -71,13 +67,6 @@ public class SurahContext extends AppCompatActivity {
 
         adapter = new AyatRecyclerViewAdapter(thisSurahAyat) ;
         recyclerView.setAdapter(adapter);
-
-
-
-//        AyatCustomListConfig list = new AyatCustomListConfig(this, 0, thisSurahAyat);
-//        l.setAdapter(list);
-
-
 
 
         NavigationView navigationView = findViewById(R.id.nav_view);

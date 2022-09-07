@@ -4,6 +4,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,12 +20,18 @@ public class ParaContext extends AppCompatActivity {
     Store store;
     DataBaseHelper db;
     ListView l;
+
+    RecyclerView recyclerView;
+    RecyclerView.Adapter adapter;
+    RecyclerView.LayoutManager layoutManager;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nav_parah_context);
         store = new Store();
-        l = findViewById(R.id.listview);
+        recyclerView = findViewById(R.id.recyclerView1);
         db = new DataBaseHelper(ParaContext.this);
         ArrayList<Ayat> ayat = db.getAyat();
         ArrayList<Ayat> thisParaAyat = new ArrayList<>();
@@ -41,14 +49,23 @@ public class ParaContext extends AppCompatActivity {
                 }
             }
         }
-        AyatRecyclerViewAdapter list = new AyatRecyclerViewAdapter(this, 0, thisParaAyat);
-        l.setAdapter(list);
 
 
 
 
 
+        recyclerView = findViewById(R.id.recyclerView1);
 
+
+        recyclerView.setHasFixedSize(true);
+
+        layoutManager = new LinearLayoutManager(ParaContext.this,
+                LinearLayoutManager.VERTICAL,
+                false);
+        recyclerView.setLayoutManager(layoutManager);
+
+        adapter = new AyatRecyclerViewAdapter(thisParaAyat) ;
+        recyclerView.setAdapter(adapter);
 
 
 

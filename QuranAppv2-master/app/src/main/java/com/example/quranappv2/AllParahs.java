@@ -24,7 +24,7 @@ public class AllParahs extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nav_all_parahs);
-        l = findViewById(R.id.listview);
+        l = findViewById(R.id.recyclerView1);
         store = new Store();
         ArrayList<Parah> arraylist = store.getAllPararh();
         ParahCustomListConfig list = new ParahCustomListConfig(this, 0, arraylist);

@@ -25,7 +25,7 @@ public class AllSurahs extends AppCompatActivity {
         setContentView(R.layout.nav_all_surahs);
         myDBHlpr = new DataBaseHelper(this);
         List<Surah> surahs = myDBHlpr.getSurahs();
-        l = findViewById(R.id.listview);
+        l = findViewById(R.id.recyclerView1);
         SurahCustomListConfig list = new SurahCustomListConfig(this,0,surahs);
         l.setAdapter(list);
         l.setOnItemClickListener(new AdapterView.OnItemClickListener() {
