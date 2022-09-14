@@ -16,6 +16,7 @@ import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
 
+
 public class ParaContext extends AppCompatActivity {
     Store store;
     DataBaseHelper db;
@@ -31,7 +32,7 @@ public class ParaContext extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nav_parah_context);
         store = new Store();
-        recyclerView = findViewById(R.id.recyclerView1);
+        recyclerView = findViewById(R.id.recyclerView2);
         db = new DataBaseHelper(ParaContext.this);
         ArrayList<Ayat> ayat = db.getAyat();
         ArrayList<Ayat> thisParaAyat = new ArrayList<>();
@@ -54,7 +55,7 @@ public class ParaContext extends AppCompatActivity {
 
 
 
-        recyclerView = findViewById(R.id.recyclerView1);
+        recyclerView = findViewById(R.id.recyclerView2);
 
 
         recyclerView.setHasFixedSize(true);

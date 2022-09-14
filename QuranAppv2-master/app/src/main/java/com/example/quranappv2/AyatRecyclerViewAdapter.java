@@ -5,6 +5,8 @@ package com.example.quranappv2;
 
 
 
+import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +16,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
 import java.util.List;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,9 +30,11 @@ import java.util.List;
 
 public class AyatRecyclerViewAdapter extends RecyclerView.Adapter<AyatRecyclerViewAdapter.MyVH> {
 
-    List<Ayat> friendsList;
-    public AyatRecyclerViewAdapter(List<Ayat> friendsList) {
-        this.friendsList = friendsList;
+    ArrayList<Ayat> ayatList;
+    private  int qariIndex;
+    public AyatRecyclerViewAdapter(ArrayList<Ayat> ayatList) {
+        this.ayatList = ayatList;
+        //this.qariIndex=i;
     }
 
     @NonNull
@@ -38,19 +43,33 @@ public class AyatRecyclerViewAdapter extends RecyclerView.Adapter<AyatRecyclerVi
 
         View itemView = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.translated_ayat, parent, false);
+
+
         return new MyVH(itemView);
     }
 
     @Override
     public void onBindViewHolder(@NonNull AyatRecyclerViewAdapter.MyVH holder, int position) {
-        holder.data=friendsList.get(position);
+        holder.data=ayatList.get(position);
         holder.ayat.setText(holder.data.getArabicText());
         holder.translation.setText(holder.data.getUrduMehmood());
+
+
+        if(position %2 == 1)
+        {
+            holder.itemView.setBackgroundColor(Color.parseColor("#C1EFFF"));
+            //  holder.imageView.setBackgroundColor(Color.parseColor("#FFFFFF"));
+        }
+        else
+        {
+            holder.itemView.setBackgroundColor(Color.parseColor("#FFC1C1"));
+            //  holder.imageView.setBackgroundColor(Color.parseColor("#FFFAF8FD"));
+        }
     }
 
     @Override
     public int getItemCount() {
-        return friendsList.size();
+        return ayatList.size();
     }
 
 
@@ -68,44 +87,3 @@ public class AyatRecyclerViewAdapter extends RecyclerView.Adapter<AyatRecyclerVi
 
 
 
-
-
-//import android.content.Context;
-//import android.graphics.Typeface;
-//import android.view.LayoutInflater;
-//import android.view.View;
-//import android.view.ViewGroup;
-//import android.widget.ArrayAdapter;
-//import android.widget.TextView;
-//
-//import androidx.annotation.NonNull;
-//import androidx.annotation.Nullable;
-//
-//import java.util.List;
-//
-//public class AyatCustomListConfig extends ArrayAdapter<Ayat> {
-//    public AyatCustomListConfig(@NonNull Context context, int resource,
-//                                 @NonNull List<Ayat> objects) {
-//        super(context, resource, objects);
-//    }
-//    @NonNull
-//    @Override
-//    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-//        Ayat s =  getItem(position);
-//        convertView = LayoutInflater.from(getContext()).inflate(R.layout.translated_ayat,parent,
-//                false);
-//        TextView arabic = convertView.findViewById(R.id.textView4);
-//        TextView translation = convertView.findViewById(R.id.textView5);
-//        arabic.setText(s.getArabicText());
-//        translation.setText(s.getUrduFateh());
-//        Typeface typeface = Typeface.createFromAsset(
-//                getContext().getAssets(),
-//                "noorehuda.ttf");
-//        Typeface urduface = Typeface.createFromAsset(
-//                getContext().getAssets(),
-//                "Jameel Noori Nastaleeq.ttf");
-//        arabic.setTypeface(typeface);
-//        translation.setTypeface(urduface);
-//        return convertView;
-//    }
-//}

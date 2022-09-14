@@ -25,14 +25,14 @@ public class AllSurahs extends AppCompatActivity {
         setContentView(R.layout.nav_all_surahs);
         myDBHlpr = new DataBaseHelper(this);
         List<Surah> surahs = myDBHlpr.getSurahs();
-        l = findViewById(R.id.recyclerView1);
+        l = findViewById(R.id.recyclerView2);
         SurahCustomListConfig list = new SurahCustomListConfig(this,0,surahs);
         l.setAdapter(list);
         l.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                     Intent intent = new Intent(AllSurahs.this, SurahContext.class);
-                    intent.putExtra("index", l + "");
+                   intent.putExtra("index", l + "");
                     startActivity(intent);
             }
         });

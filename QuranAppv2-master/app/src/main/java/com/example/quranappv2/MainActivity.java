@@ -29,6 +29,9 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nav_activity_main);
+
+
+
         surahs = findViewById(R.id.button);
         parahs = findViewById(R.id.button2);
         surahs.setOnClickListener(new View.OnClickListener() {

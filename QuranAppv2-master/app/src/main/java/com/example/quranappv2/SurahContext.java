@@ -33,7 +33,7 @@ public class SurahContext extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nav_surah_context);
         store = new Store();
-        recyclerView = findViewById(R.id.recyclerView);
+        recyclerView = findViewById(R.id.recyclerView2);
         db = new DataBaseHelper(SurahContext.this);
         ArrayList<Ayat> ayat = db.getAyat();
         ArrayList<Ayat> thisSurahAyat = new ArrayList<>();
@@ -55,7 +55,7 @@ public class SurahContext extends AppCompatActivity {
 
 
 
-        recyclerView = findViewById(R.id.recyclerView);
+        recyclerView = findViewById(R.id.recyclerView2);
 
 
         recyclerView.setHasFixedSize(true);

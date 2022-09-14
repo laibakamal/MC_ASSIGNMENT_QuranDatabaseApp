@@ -1,6 +1,7 @@
 package com.example.quranappv2;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,6 +30,16 @@ public class ParahCustomListConfig extends ArrayAdapter<Parah> {
         id.setText(s.getId());
         nameU.setText(s.getNameE());
         nameE.setText(s.getNameU());
+
+
+        if(position%2==0)
+        {
+            convertView.setBackgroundColor(Color.rgb(255,193,193));
+        }
+        else
+        {
+            convertView.setBackgroundColor(Color.rgb(193, 239, 255));
+        }
         return convertView;
     }
 }

@@ -1,6 +1,7 @@
 package com.example.quranappv2;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,6 +30,17 @@ public class SurahCustomListConfig extends ArrayAdapter<Surah> {
         id.setText(s.getId());
         name.setText(s.getNameU());
         nazool.setText(s.getNazool());
+
+        if(position%2==0)
+        {
+            convertView.setBackgroundColor(Color.rgb(255,193,193));
+        }
+        else
+        {
+            convertView.setBackgroundColor(Color.rgb(193, 239, 255));
+        }
+
+
         return convertView;
     }
 }
